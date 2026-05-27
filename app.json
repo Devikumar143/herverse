@@ -23,6 +23,12 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "dff08283-8b26-4c15-8deb-239eaa4af4ad"
+      }
+    },
+    "owner": "devikumar"
   }
 }
