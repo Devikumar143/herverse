@@ -8,121 +8,100 @@ const { width, height } = Dimensions.get('window');
 const galleryImages = [
   {
     id: 1,
-    title: "Bestie Glow ✨",
-    location: "Sweet Moments",
-    image: require('../../assets/gallery/1000193554.jpeg'),
+    title: "Sweet Beginning 🌸",
+    location: "Memory Lane",
+    image: require('../../assets/gallery/IMG-20250817-WA0001.jpg'),
     caption: "That smile of yours has a way of lighting up the entire room. Never stop shining, bestie!",
   },
   {
     id: 2,
-    title: "Sunsets & Smiles 🌅",
-    location: "Golden Hours",
-    image: require('../../assets/gallery/1000193556.jpeg'),
+    title: "Cozy Moments ☕",
+    location: "Heart Station",
+    image: require('../../assets/gallery/IMG-20251026-WA0014.jpg'),
     caption: "Under the golden sky, every second spent laughing with you is a second I cherish forever.",
   },
   {
     id: 3,
-    title: "The Cutest Duo 👭",
-    location: "Heart Station",
-    image: require('../../assets/gallery/Snapchat-1176787083.jpg'),
+    title: "A Million Laughs 👭",
+    location: "Laughter Hub",
+    image: require('../../assets/gallery/IMG-20260426-WA0002.jpg'),
     caption: "They say best friends are like stars—you don't always see them, but you know they're always there. Thank you for being my constant star.",
   },
   {
     id: 4,
-    title: "Silly Faces, Warm Hearts 😜",
-    location: "Laughter Hub",
-    image: require('../../assets/gallery/Snapchat-138064234.jpg'),
+    title: "Warmth & Comfort 🧸",
+    location: "Comfort Zone",
+    image: require('../../assets/gallery/IMG-20260506-WA0011.jpg'),
     caption: "With you, I can be 100% myself without any filters. Here’s to a million more inside jokes and silly snaps!",
   },
   {
     id: 5,
-    title: "Pure Happiness 🌸",
+    title: "Pure Happiness ✨",
     location: "Sanctuary",
-    image: require('../../assets/gallery/Snapchat-1495394634.jpg'),
+    image: require('../../assets/gallery/IMG-20260506-WA0012.jpg'),
     caption: "Your joy is completely infectious. A single message or photo from you can instantly turn my worst days around.",
   },
   {
     id: 6,
-    title: "Partner in Time ⏳",
+    title: "Intimate Hearts 💞",
     location: "Our Little World",
-    image: require('../../assets/gallery/Snapchat-1620421904.jpg'),
+    image: require('../../assets/gallery/IMG-20260506-WA0015.jpg'),
     caption: "Time flies by so fast, but every single frame of our journey is permanently printed on my heart.",
   },
   {
     id: 7,
-    title: "Cosmic Connection 💫",
-    location: "Beyond the Stars",
-    image: require('../../assets/gallery/Snapchat-1796219530.jpg'),
-    caption: "Some friendships are written in the stars. Ours is a galaxy of its own, filled with infinite love and comfort.",
-  },
-  {
-    id: 8,
-    title: "Chic & Charming 💕",
+    title: "One in a Billion 🎀",
     location: "Forever Rose",
-    image: require('../../assets/gallery/Snapchat-2041797737.jpg'),
+    image: require('../../assets/gallery/IMG-20260506-WA0016.jpg'),
     caption: "Stepping out with style, but carrying an even more beautiful heart inside. You are absolutely one in a billion.",
   },
   {
-    id: 9,
+    id: 8,
     title: "Captured Grace 📸",
-    location: "Memory Lane",
-    image: require('../../assets/gallery/Snapchat-2141221130.jpg'),
+    location: "Secret Haven",
+    image: require('../../assets/gallery/IMG-20260506-WA0017.jpg'),
     caption: "Looking absolutely beautiful in this candid frame. Every photograph of you tells a story of elegance.",
   },
   {
+    id: 9,
+    title: "Soulmates in Time ⏳",
+    location: "Galaxy of Love",
+    image: require('../../assets/gallery/IMG-20260506-WA0018.jpg'),
+    caption: "Distance and time mean nothing when our hearts are permanently connected by the strongest, most beautiful bond of love.",
+  },
+  {
     id: 10,
-    title: "Heart & Soul 🎀",
-    location: "Secret Haven",
-    image: require('../../assets/gallery/Snapchat-256599440.jpg'),
-    caption: "Distance and time mean nothing when our souls are permanently connected by the strongest bond of friendship.",
+    title: "Endless Sunshine ☀️",
+    location: "Sunlit Memories",
+    image: require('../../assets/gallery/IMG-20260511-WA0007.jpg'),
+    caption: "You feel like warm blankets on a cold winter night—peaceful, cozy, irreplaceable, and deeply loved.",
   },
   {
     id: 11,
-    title: "Warm Snuggle Vibes 🧸",
-    location: "Comfort Zone",
-    image: require('../../assets/gallery/Snapchat-435183092.jpg'),
-    caption: "For the friend who feels like warm blankets on a cold winter night—peaceful, cozy, and irreplaceable.",
+    title: "Unshakable Promise 🤝",
+    location: "Golden Bloom",
+    image: require('../../assets/gallery/IMG-20260511-WA0009.jpg'),
+    caption: "No matter where life takes us, my promise to love you, support you, and stand by you remains completely unshakable.",
   },
   {
     id: 12,
-    title: "Infinite Radiance ☀️",
-    location: "Sunlit Memories",
-    image: require('../../assets/gallery/Snapchat-660766747.jpg'),
-    caption: "No matter where life takes us, my promise to support you and stand by you remains completely unshakable.",
+    title: "Treasured Moments 🍬",
+    location: "Giggle Corner",
+    image: require('../../assets/gallery/IMG-20260511-WA0011.jpg'),
+    caption: "The best memories are the ones we didn’t plan to make. Every tiny moment shared with you is a moment of pure, beautiful love.",
   },
   {
     id: 13,
-    title: "Sweet Candids 🍬",
-    location: "Giggle Corner",
-    image: require('../../assets/gallery/Snapchat-81184239.jpg'),
-    caption: "The best memories are the ones we didn’t plan to make. Just laughing, living, and sharing this beautiful life together.",
-  },
-  {
-    id: 14,
-    title: "Stardust & Sparkles ✨",
-    location: "Galaxy of Love",
-    image: require('../../assets/gallery/Snapchat-838652340.jpg'),
+    title: "Ultimate Favorite Person 🎉",
+    location: "Her World",
+    image: require('../../assets/gallery/IMG-20260511-WA0020.jpg'),
     caption: "Happy birthday to my ultimate favorite person! I hope this tiny universe of memories reminds you of how loved you are.",
   },
   {
-    id: 15,
-    title: "Wednesday Magic 🖤",
-    location: "Her World",
-    image: require('../../assets/gallery/IMG_20260526_000242_946.jpg'),
-    caption: "Even on ordinary Wednesdays, she carries an extraordinary grace that makes every day feel like a celebration.",
-  },
-  {
-    id: 16,
-    title: "Flowers & You 🌼",
-    location: "Golden Bloom",
-    image: require('../../assets/gallery/IMG_20260526_000252_118.jpg'),
-    caption: "Standing in a garden of flowers, and still the most beautiful thing my eyes could find was you.",
-  },
-  {
-    id: 17,
-    title: "Golden Starlight ⭐",
+    id: 14,
+    title: "Elegance & Beauty ⭐",
     location: "Cosmic Realm",
-    image: require('../../assets/gallery/716a603d-f73b-47ab-9b62-29fc60e4d27a.jpg'),
+    image: require('../../assets/gallery/IMG-20260511-WA0022.jpg'),
     caption: "Your presence is like a brilliant star that guides me, warms me, and fills my life with endless beauty.",
   },
 ];
@@ -199,7 +178,7 @@ export default function Gallery({ onBack }) {
                 activeOpacity={0.8}
               >
                 <View style={styles.polaroidFrame}>
-                  <Image source={photo.image} style={styles.polaroidImage} resizeMode="contain" />
+                  <Image source={photo.image} style={styles.polaroidImage} resizeMode="cover" />
                   <View style={styles.polaroidBottom}>
                     <Text style={styles.polaroidTitle} numberOfLines={1}>{photo.title}</Text>
                     <Text style={styles.polaroidLoc} numberOfLines={1}>{photo.location}</Text>
@@ -272,7 +251,7 @@ export default function Gallery({ onBack }) {
 
               {/* Enhanced Polaroid zoom Frame */}
               <View style={styles.zoomPolaroidFrame}>
-                <Image source={selectedPhoto.image} style={styles.zoomPolaroidImage} resizeMode="contain" />
+                <Image source={selectedPhoto.image} style={styles.zoomPolaroidImage} resizeMode="cover" />
                 <View style={styles.zoomPolaroidBottom}>
                   <Text style={styles.zoomTitle}>{selectedPhoto.title}</Text>
                   <Text style={styles.zoomLoc}>{selectedPhoto.location}</Text>

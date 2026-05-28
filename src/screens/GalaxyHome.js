@@ -184,7 +184,7 @@ export default function GalaxyHome({ onNavigate, isSecretUnlocked }) {
 
       {/* Header Info */}
       <View style={styles.topInfo}>
-        <Text style={styles.appTitle}>MOUNI♥️</Text>
+        <Text style={styles.appTitle}>RESHMA♥️</Text>
         <Text style={styles.tagline}>explore the universe built for you</Text>
       </View>
 
@@ -274,7 +274,7 @@ export default function GalaxyHome({ onNavigate, isSecretUnlocked }) {
 
       {/* Floating Quote */}
       <View style={styles.bottomBar}>
-        <Text style={styles.floatingQuote}>“Built for you mouni ❤️”</Text>
+        <Text style={styles.floatingQuote}>“Built for you reshma ❤️”</Text>
       </View>
     </View>
   );

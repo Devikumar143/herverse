@@ -148,7 +148,7 @@ export default function FinalEnding({ onRestart }) {
             ]}
           >
             <Text style={styles.hbdSub}>Happy Birthday</Text>
-            <Text style={styles.hbdTitle}>MOUNI♥️</Text>
+            <Text style={styles.hbdTitle}>RESHMA♥️</Text>
             <Text style={styles.hbdFooter}>You are the best gift I could ever ask for.</Text>
           </Animated.View>
 

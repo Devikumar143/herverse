@@ -5,10 +5,10 @@ import * as Haptics from 'expo-haptics';
 
 const { width, height } = Dimensions.get('window');
 
-// Target Date: Locked until June 9th, 2026 at midnight
-const TARGET_DATE = new Date('2026-06-09T00:00:00');
+// Target Date: Locked until May 29th, 2026 at midnight
+const TARGET_DATE = new Date('2026-05-29T00:00:00');
 
-export default function TimeLock({ onUnlock, onBypass }) {
+export default function TimeLock({ onUnlock }) {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isCounting, setIsCounting] = useState(true);
 
@@ -23,9 +23,6 @@ export default function TimeLock({ onUnlock, onBypass }) {
   const rippleScale = useRef(new Animated.Value(1)).current;
   const rippleOpacity = useRef(new Animated.Value(0)).current;
 
-  // Developer bypass taps tracking
-  const bypassTaps = useRef(0);
-  const bypassTimer = useRef(null);
   const timerIntervalRef = useRef(null);
 
   // Complex, premium unlock animation sequence (Supernova + shockwave + content exit)
@@ -147,27 +144,12 @@ export default function TimeLock({ onUnlock, onBypass }) {
 
     return () => {
       if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
-      if (bypassTimer.current) clearTimeout(bypassTimer.current);
     };
   }, []);
 
-  // Developer Bypass: Tapping the heart 5 times quickly unlocks for testing
+  // Tapping the heart provides a gentle haptic pulse feedback
   const handleHeartPress = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-
-    // Reset tap timeout
-    if (bypassTimer.current) clearTimeout(bypassTimer.current);
-
-    bypassTaps.current += 1;
-
-    // Reset counts if they pause for more than 2 seconds
-    bypassTimer.current = setTimeout(() => {
-      bypassTaps.current = 0;
-    }, 2000);
-
-    if (bypassTaps.current >= 5) {
-      triggerUnlockAnimation();
-    }
   };
 
   const renderTimerUnit = (value, label) => (
@@ -232,7 +214,6 @@ export default function TimeLock({ onUnlock, onBypass }) {
           <Ionicons name="heart" size={10} color="#ff4d6d" style={styles.heartSep} />
           {renderTimerUnit(timeLeft.seconds, 'Secs')}
         </View>
-
 
       </Animated.View>
 
@@ -390,29 +371,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
     letterSpacing: 0.5,
   },
-  bypassBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.85)',
-    borderWidth: 1.2,
-    borderColor: 'rgba(255, 77, 109, 0.25)',
-    borderRadius: 20,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    shadowColor: '#ff4d6d',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.05,
-    shadowRadius: 5,
-    elevation: 2,
-  },
-  bypassBtnText: {
-    color: '#ff4d6d',
-    fontSize: 11,
-    fontWeight: '800',
-    letterSpacing: 1.5,
-    textTransform: 'uppercase',
-  },
+
   contentWrapper: {
     alignItems: 'center',
     width: '100%',

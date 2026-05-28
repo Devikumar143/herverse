@@ -10,11 +10,11 @@ const lettersData = [
     id: 1,
     subject: 'To My Favorite Human',
     tagline: 'A small reflection of your light...',
-    content: "Happy Birthday to my absolute favorite human, Mouni! \n\nIf I had to describe you to the world, I would tell them about the way your laughter can instantly sweep away the heaviest clouds in a room. You carry a rare kind of warmth—a gentle, golden grace that makes everyone around you feel completely safe, understood, and valued. \n\nWhether you are smiling in your snaps, sharing silly stories, or standing strong through life's challenges, you shine with a beautiful, authentic light. Thank you for simply being you, for your infinite kindness, and for filling my life with endless happiness. \n\nWith all my heart,\nYour Bestie Kumar ❤️",
+    content: "Happy Birthday to my absolute favorite human, Reshma! \n\nIf I had to describe you to the world, I would tell them about the way your laughter can instantly sweep away the heaviest clouds in a room. You carry a rare kind of warmth—a gentle, golden grace that makes everyone around you feel completely safe, understood, and valued. \n\nWhether you are smiling in your snaps, sharing silly stories, or standing strong through life's challenges, you shine with a beautiful, authentic light. Thank you for simply being you, for your infinite kindness, and for filling my life with endless happiness. \n\nWith all my heart,\nYour Bestie Kumar ❤️",
   },
   {
     id: 2,
-    subject: 'The Spirit of Mouni',
+    subject: 'The Spirit of Reshma',
     tagline: 'What makes you so special...',
     content: "My dear bestie,\n\nI want to take a moment on your birthday to celebrate the truly incredible person you are. \n\nYou are someone who listens with your whole heart, speaks with pure kindness, and stands fiercely by the people you cherish. Your soul is a beautiful blend of sweet, joyful wonder and profound inner strength. You find beauty in the smallest things and bring infinite comfort to the deepest silences. \n\nYou deserve every ounce of happiness, sunshine, and laughter this universe has to offer because you give so much of it away to others. Never forget how truly wonderful, unique, and irreplaceable you are to me. \n\nForever your proud best friend,\nKumar ❤️",
   },

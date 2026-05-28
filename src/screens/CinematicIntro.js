@@ -235,7 +235,7 @@ export default function CinematicIntro({ onEnter, playBackgroundMusic }) {
       case 6: return "ordinary days became memories.";
       case 7: return "Late-night talks became comfort.";
       case 8: return "Small moments became important.";
-      case 10: return "MOUNI♥️";
+      case 10: return "RESHMA♥️";
       case 11: return "A world made of pure love.";
       case 12: return "Built from memories.";
       case 13: return "From comfort.";

@@ -150,7 +150,7 @@ export default function FlowerGarden({ onBack }) {
       >
         <View style={styles.card}>
           <Text style={styles.headerTitle}>🌸 Bestie Garden 🌸</Text>
-          <Text style={styles.headerSub}>grown for my forever bestie, mouni 🫶</Text>
+          <Text style={styles.headerSub}>grown for my forever bestie, reshma 🫶</Text>
         </View>
       </Animated.View>
 

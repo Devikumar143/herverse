@@ -170,7 +170,7 @@ export default function MirrorUniverse({ onBack }) {
           {/* Description card */}
           <View style={styles.promptCard}>
             <Text style={styles.promptDesc}>
-              HerVerse uses your front camera as a private live mirror. This displays your live reflection inside Mouni's birthday universe!
+              HerVerse uses your front camera as a private live mirror. This displays your live reflection inside Reshma's birthday universe!
             </Text>
             <View style={styles.privacyRow}>
               <Ionicons name="lock-closed-outline" size={12} color="rgba(26,37,30,0.4)" />

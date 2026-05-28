@@ -136,7 +136,6 @@ export default function App() {
         <CosmicBackground>
           <TimeLock 
             onUnlock={() => setIsTimeUnlocked(true)} 
-            onBypass={() => setIsTimeUnlocked(true)} 
           />
         </CosmicBackground>
       </View>
